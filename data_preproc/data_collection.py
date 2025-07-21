@@ -5,13 +5,6 @@ Data collection preparation.
     of CT, RTDOSE and RTSTRUCT.
 - Match UID between CT and RTDOSE and RTSTRUCTs.
 
-
-MDACC:
-WARNING: Patient_id = 1910821180: CT and RTDOSE Frame of Reference UID do NOT match!
-WARNING: Patient_id = 3514675268: CT and RTDOSE Frame of Reference UID do NOT match!
-WARNING: Patient_id = 9878102359: CT and RTDOSE Frame of Reference UID do NOT match!
-WARNING: Patient_id = 1910821180: CT and RTSTRUCT Frame of Reference UID do NOT match!
-WARNING: Patient_id = 3514675268: CT and RTSTRUCT Frame of Reference UID do NOT match!
 """
 import os
 import time
