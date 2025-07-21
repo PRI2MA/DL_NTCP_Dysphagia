@@ -1,6 +1,5 @@
 # Deep Learning NTCP Dysphagia modelling
-This code is adapted from https://github.com/PRI2MA/DL_NTCP_Xerostomia to make it work for dysphagia predictions. 
-
+This code is adapted from https://github.com/PRI2MA/DL_NTCP_Xerostomia to make it suitable for dysphagia predictions. 
 
 ## Running the code
 ##### Requirements
