@@ -12,7 +12,7 @@ model and/or Deep Learning model. The features should be in the form such that i
 ##### Data preprocessing
 ```
 # Change directory to data preprocessing folder
-$ cd D:\Github\dl_ntcp_xerostomia\data_preproc
+$ cd D:\Github\dl_ntcp_dysphagia\data_preproc
 
 # Run main script
 $ python main.py
