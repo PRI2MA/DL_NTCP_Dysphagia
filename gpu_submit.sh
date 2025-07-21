@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=Dysphagia
 #SBATCH --mail-type=END
-#SBATCH --mail-user=s.p.m.de.vette@umcg.nl
+#SBATCH --mail-user=xxxxx@umcg.nl
 #SBATCH --time=23:59:59
 #SBATCH --cpus-per-task=12
 #SBATCH --partition=gpu
