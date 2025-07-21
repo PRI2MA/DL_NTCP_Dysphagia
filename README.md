@@ -1,4 +1,5 @@
-# Deep Learning NTCP Xerostomia modelling
+# Deep Learning NTCP Dysphagia modelling
+This code is adapted from https://github.com/PRI2MA/DL_NTCP_Xerostomia to make it work for dysphagia predictions. 
 
 
 ## Running the code
@@ -38,10 +39,10 @@ $ python main.py
 - (`data_preproc_ct_segmentation_map_citor.py`) The notations in CITOR RTSTRUCTs of a certain structure can 
 be slightly different between different files. These corrections are dealt with and can be found in the function 
 modify_structure_citor().
-  - `PMC_...` (incorrect) instead of `PCM...` (correct) (`patient_id = 0111766`)
+  - `PMC_...` (incorrect) instead of `PCM...` (correct) (`patient_id = xxxx`)
   - `Cricopharyngeus` instead of `crico`
-  - `Supraglotticlarynx` instead of `supraglottic` (`patient_id = 5078347`)
-- (`data_preproc_ct_segmentation_map_citor.py`) There is an incorrect contour part for `patient_id = 6657004`: slice 101, 
+  - `Supraglotticlarynx` instead of `supraglottic` (`patient_id = xxxx`)
+- (`data_preproc_ct_segmentation_map_citor.py`) There is an incorrect contour part for `patient_id = xxxx`: slice 101, 
 y: 100 - 102, x: 120 - 122 (see segmentation_map[101,97:106,117:126]), structure: `oralcavity_ext`. If we use the 
 segmentation_maps of all structures (or: at least `oralcavity_ext`) for determining the `x`-dimension cropping region, 
 then this will mess up `x_lower` and hence `x_center`.
