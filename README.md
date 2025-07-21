@@ -25,7 +25,7 @@ perform stratified sampling on.
 ##### Model training and evaluation
 ```
 # Change directory to parent folder
-$ cd D:\Github\dl_ntcp_xerostomia
+$ cd D:\Github\dl_ntcp_dysphagia
 
 # Run main script
 $ python main.py
@@ -239,7 +239,7 @@ for cropping a bounding box area of CT, RTDOSE and segmentation_map if `data_pre
 7. `data_preproc.py`
 - Create `dataset_full` folder: create and store the input Numpy array for all patients by concatenating their 
 CT+RTDOSE+RTSTRUCT. Note: we also create such arrays for patients that are not included for a specific study (e.g. 
-prediction of xerostomia). Those patients are included in one or more other studies, e.g. prediction of dysphagia and/or 
+prediction of dysphagia). Those patients are included in one or more other studies, e.g. prediction of dysphagia and/or 
 taste. 
 - Create `dataset` folder: in this folder we make a distinction between patients of different endpoints/labels 
 (`0`, `1`). This is required for PyTorch Dataset and DataLoader class objects. Moreover, the dataset folder should 
@@ -264,8 +264,8 @@ perform_clipping and perform_resize in `data_preproc_config.py`.
 - Add channel dimension, i.e. convert array shape from `(z, y, x)` to `(1, z, y, x)`. This is required for concatenating
 the different input modalities to single array.
 - Save the concat([CT, RTDOSE, segmentation_map]) Numpy array to the corresponding subfolder of `dataset` folder.
-- Load csv with features (and labels), and save the relevant features: baseline xerostomia (`baseline`), mean doses 
-contralateral parotid gland (`D_contra_0`).
+- Load csv with features (and labels), and save the relevant features: baseline dysphagia (`baseline`), mean doses 
+organs at risk (`D_0`).
 
 
 8. `data_preproc_exclude_patients.py`
